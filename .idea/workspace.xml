@@ -7,6 +7,7 @@
     <list default="true" id="d1655bad-2beb-4551-b2a6-f93f4c0b0aca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/SellerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/SellerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/impl/SellerDAOJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/impl/SellerDAOJDBC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/POS/Downloads/mysql-connector-java-8.0.30.jar",
+    "last_opened_file_path": "C:/Users/POS/Documents/projetos-java/Estudos-Basicos",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
