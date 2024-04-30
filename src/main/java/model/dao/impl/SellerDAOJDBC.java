@@ -85,7 +85,35 @@ public class SellerDAOJDBC implements SellerDAO {
 
     @Override
     public List<Seller> findAll() {
-        return null;
+        PreparedStatement st = null;
+        ResultSet rs = null;
+        try{
+            st = conn.prepareStatement("SELECT seller.*,department.Name AS DepName " +
+                    "FROM seller INNER JOIN department " +
+                    "ON seller.DepartmentID = department.Id " +
+                    "ORDER BY Name");
+
+            rs = st.executeQuery();
+
+            List<Seller> list = new ArrayList<>();
+            Map<Integer,Department> map = new HashMap<>(); // impedir que haja mais de uma instancia de um mesmo departamento
+            while(rs.next()){ //verifica se retornou alguma linha
+                Department dep = map.get(rs.getInt("DepartmentId"));
+                if(dep == null){ //verifica se o departamento já foi instanciado
+                    dep = instantiateDepartment(rs);
+                    map.put(rs.getInt("DepartmentId"),dep);
+                }
+                Seller seller = intantiateSeller(rs,dep);
+                list.add(seller);
+            }
+            return list;
+        }catch(SQLException e){
+            throw new DbException(e.getMessage());
+        }
+        finally {
+            DB.closeStatement(st);
+            DB.closeResultSet(rs); //não pode fechar a conexão, pois pode ter outra ação depois dessa
+        }
     }
     @Override
     public List<Seller> findByDepartment(Department department) {
