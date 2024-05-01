@@ -10,7 +10,7 @@ public class Program2 {
 
     public static void main(String[] args) {
         DepartmentDAO dep = DAOFactory.createDepartmentDAO();
-        Department d = dep.findById(1);
+        Department d = dep.findById(10);
         System.out.println(d);
 
         Department insert = new Department(null,"Games");
@@ -21,5 +21,10 @@ public class Program2 {
         for(Department department : list){
             System.out.println(department);
         }
+
+        dep.deleteById(11);
+        d.setName("Marketing");
+        dep.update(d);
+
     }
 }

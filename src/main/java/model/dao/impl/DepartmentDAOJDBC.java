@@ -45,12 +45,42 @@ public class DepartmentDAOJDBC implements DepartmentDAO {
 
     @Override
     public void update(Department obj) {
-
+        PreparedStatement st = null;
+        try{
+            st = conn.prepareStatement("UPDATE department SET Name = ? WHERE Id = ?");
+            st.setString(1, obj.getName());
+            st.setInt(2,obj.getId());
+            int rowsAffected = st.executeUpdate();
+            if(rowsAffected > 0){
+                System.out.println("sucess");
+            }
+        }catch(SQLException e){
+            throw new DbException(e.getMessage());
+        }
+        finally {
+            DB.closeStatement(st);
+        }
     }
 
     @Override
     public void deleteById(Integer id) {
-
+        PreparedStatement st = null;
+        try{
+            st = conn.prepareStatement("DELETE FROM department WHERE Id = ?");
+            st.setInt(1,id);
+            int rowsAffected = st.executeUpdate();
+            if(rowsAffected > 0){
+                System.out.println("Id "+id+" deleted sucess");
+            }
+            else{
+                System.out.println("unexpected error");
+            }
+        }catch(SQLException e){
+            throw new DbException(e.getMessage());
+        }
+        finally{
+            DB.closeStatement(st);
+        }
     }
 
     @Override
