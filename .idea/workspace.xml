@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1655bad-2beb-4551-b2a6-f93f4c0b0aca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/application/Program2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/impl/DepartmentDAOJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/SellerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/SellerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/impl/SellerDAOJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/impl/SellerDAOJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/DAOFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2foxALCzUXTjrjGPtA2ZUL1QUNf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,11 +38,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Program.executor": "Run",
+    "Application.Program2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/POS/Documents/projetos-java/Estudos-Basicos",
+    "last_opened_file_path": "C:/Users/POS/Documents/projetos-java/demo-jdbc-dao",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
